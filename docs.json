@@ -37,6 +37,10 @@
                                     "event/guests/export-user-data",
                                     "event/guests/view-guest"
                                 ]
+                            },
+                            {
+                                "group": "Event Management",
+                                "pages": ["event/eventPage/manage-event"]
                             }
                         ]
                     }
