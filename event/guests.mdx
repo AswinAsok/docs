@@ -26,10 +26,10 @@ Each guest entry includes the following details and action icons:
 
 | Icon | Meaning |
 |------|---------|
-|<Icon icon="pen" iconType="solid" /> | Edit guest details |
-|<Icon icon="circle" iconType="regular" />  <Icon icon="circle-check" iconType="regular" /> <Icon icon="circle" iconType="regular" color="#D70040"/> | Shortlisting status (Pending/Approved/Rejected) |
-|<Icon icon="dollar-sign" iconType="solid" /> | Indicates if the guest has made a payment |
-|<Icon icon="ticket" iconType="solid" /> | Shows if a coupon was used during registration |
+|<Icon icon="pen" iconType="solid" color="grey" /> | Edit guest details |
+|<Icon icon="circle" iconType="regular" color="grey"/>  <Icon icon="circle-check" iconType="regular" color="grey" /> <Icon icon="circle" iconType="regular" color="#D70040"/> | Shortlisting status (Pending/Approved/Rejected) |
+|<Icon icon="dollar-sign" iconType="solid" color="grey"/> <Icon icon="dollar-sign" iconType="solid" /> | Indicates if the guest has made a payment or not. If green then used |
+|<Icon icon="ticket" iconType="solid" color="grey" /> <Icon icon="ticket" iconType="solid" /> | Shows if a coupon was used during registration, if green then used. |
 
 Start your journey with MakeMyPass today and experience stress-free event management!
 
@@ -48,3 +48,32 @@ Organizers can perform bulk actions by selecting multiple guests:
 4. Use **Select All** or **Deselect All** to quickly manage selections.
 
 > **Note:** Selection applies only to guests currently visible in the list.
+
+<CardGroup cols={2}>
+  <Card
+    title="Bulk Guest Invite"
+    icon="users"
+    iconType="solid"
+    href="/event/bulk-guest-invite"
+  >
+    Invite multiple guests at once by uploading a CSV file with guest details.
+  </Card>
+  
+  <Card
+    title="Individual Guest Invite"
+    icon="user-plus"
+    iconType="solid"
+    href="/event/individual-invite"
+  >
+    Send personalized invitations to specific guests one at a time.
+  </Card>
+
+  <Card
+    title="Exort Guest Data"
+    icon="file-export"
+    iconType="solid"
+    href="/event/export-user-data"
+  >
+    Download guest information in CSV format for record-keeping and analysis.
+  </Card>
+</CardGroup>
