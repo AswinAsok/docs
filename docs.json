@@ -25,8 +25,7 @@
                                 "group": "Insights",
                                 "pages": ["event/insights", "event/page-view-analytics"]
                             },
-                            "event/manage-event",
-                            "event/attendees"
+                            "event/guests"
                         ]
                     }
                 ]
