@@ -15,7 +15,7 @@
                 "groups": [
                     {
                         "group": "Get Started",
-                        "pages": ["introduction", "quickstart", "development"]
+                        "pages": ["introduction"]
                     },
                     {
                         "group": "Essentials",
@@ -49,13 +49,13 @@
         "links": [
             {
                 "label": "Support",
-                "href": "mailto:hi@mintlify.com"
+                "href": "https://wa.me/918606358178"
             }
         ],
         "primary": {
             "type": "button",
-            "label": "Dashboard",
-            "href": "https://dashboard.mintlify.com"
+            "label": "MakeMyPass",
+            "href": "https://makemypass.com"
         }
     },
     "footer": {
