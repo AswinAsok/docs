@@ -23,16 +23,19 @@
                             "event/overview",
                             {
                                 "group": "Event Insights",
-                                "pages": ["event/insights", "event/page-view-analytics"]
+                                "pages": [
+                                    "event/insights/insights",
+                                    "event/insights/page-view-analytics"
+                                ]
                             },
                             {
                                 "group": "Guests Management",
                                 "pages": [
-                                    "event/guests",
-                                    "event/bulk-guest-invite",
-                                    "event/individual-invite",
-                                    "event/export-user-data",
-                                    "event/view-guest"
+                                    "event/guests/guests",
+                                    "event/guests/bulk-guest-invite",
+                                    "event/guests/individual-invite",
+                                    "event/guests/export-user-data",
+                                    "event/guests/view-guest"
                                 ]
                             }
                         ]
