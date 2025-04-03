@@ -21,7 +21,7 @@
                         "group": "Event Management",
                         "pages": [
                             "event/overview",
-                            "event/create-event",
+                            "event/insights",
                             "event/manage-event",
                             "event/attendees"
                         ]
