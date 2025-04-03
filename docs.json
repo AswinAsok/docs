@@ -21,7 +21,10 @@
                         "group": "Event Management",
                         "pages": [
                             "event/overview",
-                            "event/insights",
+                            {
+                                "group": "Insights",
+                                "pages": ["event/insights", "event/page-view-analytics"]
+                            },
                             "event/manage-event",
                             "event/attendees"
                         ]
