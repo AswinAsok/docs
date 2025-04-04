@@ -61,7 +61,8 @@
                                     "event/eventPage/manage-speakers",
                                     "event/eventPage/manage-sponsers"
                                 ]
-                            }
+                            },
+                            "event/form-builder"
                         ]
                     }
                 ]
