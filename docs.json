@@ -51,7 +51,8 @@
                                     },
                                     "event/eventPage/manage-coupons",
                                     "event/eventPage/manage-venues",
-                                    "event/eventPage/manage-speakers"
+                                    "event/eventPage/manage-speakers",
+                                    "event/eventPage/manage-sponsers"
                                 ]
                             }
                         ]
