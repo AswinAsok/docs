@@ -40,7 +40,16 @@
                             },
                             {
                                 "group": "Event Management",
-                                "pages": ["event/eventPage/manage-event"]
+                                "pages": [
+                                    "event/eventPage/manage-event",
+                                    {
+                                        "group": "Manage Tickets",
+                                        "pages": [
+                                            "event/eventPage/manage-tickets",
+                                            "event/eventPage/advanced-ticket-settings"
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
