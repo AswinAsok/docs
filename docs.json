@@ -43,6 +43,13 @@
                                 "pages": [
                                     "event/eventPage/manage-event",
                                     {
+                                        "group": "Event Settings",
+                                        "pages": [
+                                            "event/eventPage/edit-event",
+                                            "event/eventPage/advanced-edit-event"
+                                        ]
+                                    },
+                                    {
                                         "group": "Manage Tickets",
                                         "pages": [
                                             "event/eventPage/manage-tickets",
