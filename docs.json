@@ -62,7 +62,8 @@
                                     "event/eventPage/manage-sponsers"
                                 ]
                             },
-                            "event/form-builder"
+                            "event/form-builder",
+                            "event/scan-qr"
                         ]
                     }
                 ]
