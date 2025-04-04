@@ -48,7 +48,8 @@
                                             "event/eventPage/manage-tickets",
                                             "event/eventPage/advanced-ticket-settings"
                                         ]
-                                    }
+                                    },
+                                    "event/eventPage/manage-coupons"
                                 ]
                             }
                         ]
