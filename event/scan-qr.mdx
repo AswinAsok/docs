@@ -5,39 +5,85 @@ description: "This guide provides a comprehensive overview of the QR scanning an
 
 ## Check-In Options
 
+<Frame caption="based on the event settings, the options available for check-in will be displayed.">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/scanQR/scanOptions.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
+
 ### Check-In User
-Click this option to check in a user to the main event venue. based on the event settings. 
-You can also view the user's details, including their name, email, and phone number, 
-before confirming the check-in.
+- Click this option to check in a user to the main event venue.
+- if the [check-in confirmation](/event/eventPage/advanced-edit-event#check-in-confirmation) is enabled, a confirmation pop-up will appear after scanning the QR code.
+- The organizer can choose to check in the user or cancel the action.
+- If the user is already checked in, a pop-up will appear indicating that the user is already checked in.
 
 ### Venue Check-In
-If multiple venues are configured for an event, use this option to check in users at specific event venues, the tracking for venue check-in can be later viewed in the event insights dashboard.
+- if you have added any [venue](/event/eventPage/manage-venues) to your event, this option will be available.
+- Click this option to check in a user to a specific venue.
+- If the user is already checked in to that venue, a pop-up will appear indicating that the user is already checked in.
 
 ### Check-Out User
-If **Check-Out User** is enabled in event settings, use this option to scan and check out users.
+If **Check-Out User** is enabled from the [event advanced settings](/event/eventPage/advanced-edit-event#enable-checkout-scan), this option will be available.
+- Click this option to check out a user from the main event venue.
 
 ## Inventory Management
 
 ### Inventory
 Use this option to distribute perks/goodies to guests by scanning their QR codes at the distribution counter.
 
+<Frame caption="when the inventory option is selected, the list of goodies will be displayed as such and the organizer can select the goodie to be distributed.">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/scanQR/inventory.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
+
+<Note>
+This distribution method is preferred if a common goodie is being distributed to the guests from a single counter. Here **goodie** is only selected once and the guest QR is scanned multiple times during distribution.
+</Note>
+
 **Steps:**
 1. Click **Inventory**
 2. Select **Goodie Name**
 3. Scan **Guest QR**
 4. Distribute Item
+5. Repeat steps 3 and 4 for each guest
 
 ### Individual Inventory
 Unlike the **Inventory** option, this mode requires scanning the guest's QR code first to display the list of available items. The organizer can then select and claim a specific item.
+
+<Frame caption="when the individual inventory option is selected, you can scan the guest QR code and the list of goodies will be displayed.">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/scanQR/individualInventory.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
+
+<Note>
+This distritbution method is preferred if a number of goodies are being distributed to the guest. Here the guest QR is scanned once and the availabel goodie is selected multiple times during distribution.
+</Note>
 
 **Steps:**
 1. Scan **Guest QR**
 2. View available goodies
 3. Select goodie to distribute
 4. Confirm claim
+5. Repeat steps 3 to 4 for each guest, until all goodies are claimed
 
 ### Add Bonus
 If a particular goodie has not been pre-allocated, use this option to add it manually for a guest.
+
+<Frame>
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/scanQR/addBonus.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
 
 **Steps:**
 1. Scan **Guest QR**
@@ -45,12 +91,17 @@ If a particular goodie has not been pre-allocated, use this option to add it man
 3. Choose quantity to allocate
 4. Confirm allocation
 
+- The list of claimed goodies as well as the quantity and goodies which was allocated but not claimed will also be displayed.
+
 After allocation, use either **Inventory** or **Individual Inventory** to distribute the goodies.
 
 ## Print Ticket
 
 ### Remote Printing
-If **Remote Printing** is enabled:
+
+Remote Printing allows you to print tickets from a different location than the one where the QR code is scanned. This is useful for events with multiple counters or locations.
+
+If **Remote Printing** is enabled from the [Advanced Event Settings](/event/eventPage/advanced-edit-event#remote-printing), the following options will be available:
 - When a valid QR is scanned, available online printers and their IDs will be displayed.
 - Select a printer ID and assign the print job to that counter.
 
