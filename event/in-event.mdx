@@ -4,11 +4,26 @@ description: "The **In-Event** page provides real-time check-in statistics and a
 ---
 
 ## Glance Section
+
+<Frame>
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/inEvent/glance.png"
+/>
+</Frame>
+
 Similar to the **Glance View** in the **Overview Section**, this section displays:
 - The check-in count against total registrations, split by category.
 - For multi-day check-in events, the check-ins for the current day are also displayed separately.
 
 ## Graphs
+
+<Frame caption="check-in trends and category-wise check-ins">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/inEvent/graphs.png"
+/>
+</Frame>
 
 ### Check-In Trends (Line Graph)
 - The first graph is a **line graph** showing the number of check-ins per hour for the day.
@@ -19,17 +34,42 @@ Similar to the **Glance View** in the **Overview Section**, this section display
 - The second graph is a **bar graph** displaying the total number of check-ins per category.
 - This is an **aggregate graph**, meaning it does not categorize data by event date.
 
+<Frame caption="names of the guests who have checked in recently, sorted by check
+">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/inEvent/recentCheckins.png"
+/>
+</Frame>
+
 ## Recent Check-Ins
 - A list of the most recent check-ins, displaying guest names in real time.
 - A **welcome banner** automatically pops up when a new check-in occurs.
 
-## Room Number Feature
+## Unique Room Number
 For venues with multiple check-in points, this feature ensures organized guest check-ins:
+
+### Adding Room Numbers
+
+<Frame>
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/inEvent/roomNumber.png"
+/>
+</Frame>
+
+
+- Click on the **Add Room Number** button to add a room number.
+- In the pop-up, enter the **room number**.
+- Click **Add** to save the room number.
+
+### How It Works
 
 1. **Multiple Monitors Setup**
    - Two separate monitors can be placed in hallways leading to check-in areas.
    - Each monitor corresponds to a specific check-in hall.
 
 2. **Room Number Assignment**
-   - While scanning, the corresponding **room number** is assigned to each check-in.
+   - While scanning, the volunteer can enter the room number.
+   - The system will display the room number on the monitor.
    - The welcome banners are displayed accordingly, ensuring guests are guided to the correct check-in area.
