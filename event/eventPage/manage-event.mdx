@@ -3,6 +3,9 @@ title: 'Event Management'
 description: "The event page has four main sections for managing your event: public presence, appearance, attendee actions, and communication."
 ---
 
+<Frame>
+  <img src="/images/event/eventPage/eventTopBanner.png" className="rounded-lg shadow-md" />
+</Frame>
 
 ### Public URL
 
@@ -15,6 +18,10 @@ you can:
 ### UTM Parameters
 
 UTM parameters help you track the effectiveness of your marketing campaigns.
+
+<Frame>
+  <img src="/images/event/eventPage/utm.png" className="rounded-lg shadow-md" />
+</Frame>
 
 To add UTM parameters:
 1. Click the "UTM" button to open the UTM section
@@ -38,14 +45,23 @@ To change the event's organization:
 
 Tags help you organize and group events for easier management.
 
+<Frame>
+  <img src="/images/event/eventPage/tagsModal.png" className="rounded-lg shadow-md" />
+</Frame>
+
 To add tags to your event:
-1. Click on the tags icon in the top right of the banner section
+1. Click on the **Tags icon** <Icon icon="tags" iconType="solid" color="white"/> in the top right of the banner section
 2. In the modal that appears, create new tags or select existing ones
 3. Click the "Save Tags" button
 
 ## Additional Actions
 
 - **Embed Form**: Click this button to get an iframe code you can paste into your website to embed the registration form
+
+<Frame caption="Embed Form Modal">
+  <img src="/images/event/eventPage/embedForm.png" className="rounded-lg shadow-md" />
+</Frame>
+
 - **Edit Event**: Click to access the full event settings
 
 ## Mail Management
@@ -62,6 +78,16 @@ MakeMyPass supports five different types of emails:
 4. **After Event Thank You**: Sent to attendees who checked in at the event (triggered by admin from the post-event page)
 5. **After Event Sorry**: Sent to registrants who did not check in at the event
 
+<Frame >
+  <img src="/images/event/eventPage/mailManagement.png" className="rounded-lg shadow-md" />
+</Frame>
+
+| Icon | Meaning |
+|------|---------|
+|<Icon icon="ticket" iconType="solid" /> | Ticket for the guest will be send with this mail |
+|<Icon icon="circle-check" iconType="solid" />   | This mail is active, will be send at the trigger point |
+|<Icon icon="circle-x" iconType="solid" color="#ff5c5c"/>   | This mail is in-active and will not be send.|
+
 ### Editing Email Templates
 
 To customize any email template:
@@ -75,3 +101,6 @@ To customize any email template:
    - Configure a custom SMTP server for sending the email
 3. Use the toggle button to activate or deactivate the email type for this event
 
+<Frame >
+  <img src="/images/event/eventPage/mailModal.png" className="rounded-lg shadow-md" />
+</Frame>
