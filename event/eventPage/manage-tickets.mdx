@@ -5,6 +5,10 @@ description: "This settings page can be accessed by clicking the **Tickets** but
 
 ## Adding a New Ticket
 
+<Frame>
+  <img src="/images/event/eventPage/tickets/ticketEditTop.png" className="rounded-lg shadow-md" />
+</Frame>
+
 - Click the **New Ticket** button on the top-right corner of the modal.
 - Enter a **Title** and **Description** in the input fields below the ticket display. both this fields will be shown to the user on the registration page
 - Optionally, upload a **custom template** for the ticket. You can also [contact us](mailto:support@example.com) to set up a custom template.
@@ -19,18 +23,27 @@ The following are the key options available for managing tickets:
 - Enable **Auto-Waitlisting** to automatically activate waitlisting when a predefined attendee limit is reached.
 - Example: If the limit is set to `100`, waitlisting will activate once more than `100` attendees purchase the ticket.
 
+<Info>
+As of now, waitlisting is only available for **Free Tickets**. For paid tickets.
+All attendess who have paid for the ticket will be automatically approved.
+</Info>
+
 ### 2. Limit Capacity
 
 - Set a maximum number of tickets that can be sold for a specific type.
 - Once the limit is reached, no more tickets can be purchased.
 
-> **Note:** Tickets can still be issued manually via the **Invite Guest** option.
+<Info>
+Tickets can still be issued manually via the **Invite Guest** option.
+</Info>
 
 ### 3. Close Ticket
 
 - Stop accepting submissions for a ticket by enabling the **Close Ticket** option.
 
-> **Default Behavior:** Each event comes with a **General Ticket** created by default. If only one ticket type exists, it will not appear in the registration form. If multiple tickets are available, users will see an option to select a ticket.
+<Note>
+Each event comes with a **General Ticket** created by default. If only one ticket type exists, it will not appear in the registration form. If multiple tickets are available, users will see an option to select a ticket.
+</Note>
 
 ## Paid Tickets
 
@@ -48,6 +61,14 @@ You can choose to either:
   </Card>
   <Card title="Deduct from Total" value="total">
     The extra amount is deducted from the total amount during the final settlement.
+  </Card>
+</CardGroup>
+
+<CardGroup cols={1}>
+  <Card title="Advanced Ticket Settings" icon="wrench"
+   href="/event/eventPage/advanced-ticket-settings">
+    There are some advanced settings that can be configured for the ticket. Such as
+    adding custom prefix, number of digits, and ticket code format.
   </Card>
 </CardGroup>
 
