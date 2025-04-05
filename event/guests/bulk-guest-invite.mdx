@@ -3,12 +3,21 @@ title: 'Bulk Upload Guests'
 description: 'Easily invite multiple guests using bulk upload.'
 ---
 
-## Bulk Inviting Guests
-
-To invite multiple guests at once, follow these steps:
+<div>
+  <img src="/images/event/guests/bulkupload.png" className="rounded-lg shadow-md" style={{maxWidth: "80%"}} />
+</div>
 
 1. Click the **Invite Guest** icon at the top-right corner of the guest table.
 2. In the modal that opens, click the **Bulk Upload** button at the top-right.
+
+<Frame>
+<img
+  className="rounded-lg shadow-md rounded-lg" 
+  src="/images/event/guests/bulkinvite.png"
+  alt="Event Dashboard Glance View"
+/>
+</Frame>
+
 3. Download the **template XLSX** file, which contains:
    - **First sheet**: Headers to be filled with guest details.
    - **Second sheet**: Field descriptions, including required fields.
@@ -19,13 +28,13 @@ To invite multiple guests at once, follow these steps:
 7. Choose whether to **send tickets and invoices** to guests immediately.
 8. Click **Upload** to start the process.
 
-<div>
-  <img src="/images/event/guests/bulkupload.png" className="rounded-lg shadow-md" style={{maxWidth: "80%"}} />
-</div>
+<Tip>
+It's recommended to upload the xlxs in google sheets and then download it as an xlsx file. This ensures that the file is in the correct format and avoids any potential issues with formatting or compatibility.
+</Tip>
 
 ### Processing Status
 
-- The upload may take some time depending on the number of guests.
+- The upload may take some time depending on the number of guests to be invited.
 - Check the **Uploaded Logs** section to monitor the progress.
 - Statuses:
   - **Processing** → The upload is still ongoing.
@@ -33,5 +42,7 @@ To invite multiple guests at once, follow these steps:
 - To review processed data, click the **Download Processed File** icon.
   - This file contains details on which guests were successfully uploaded and which failed.
 
-**Note:** Once the upload process starts, it **cannot be stopped.**
+<Warning>
+Once the upload process starts, it **cannot be stopped.**
+</Warning>
 

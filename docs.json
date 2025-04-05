@@ -77,8 +77,13 @@
             "anchors": [
                 {
                     "anchor": "Documentation",
-                    "href": "https://mintlify.com/docs",
+                    "href": "https://docs.makemypass.com",
                     "icon": "book-open-cover"
+                },
+                {
+                    "anchor": "Blogs",
+                    "href": "https://makemypass.com/blogs",
+                    "icon": "rss"
                 }
             ]
         }
