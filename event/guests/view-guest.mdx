@@ -1,15 +1,10 @@
 ---
 title: 'View Guest Information'
-description: 'Organizers can view detailed information about any guest by clicking on their name. A modal will open displaying:'
+description: 'Organizers can view detailed information about any guest by clicking on their name. '
 ---
+A modal will open displaying:
 
-### Basic Details
-- **Name**
-- **Email**
-- **Ticket Code**
-- **Shortlisting Status**
-- **Registration Date & Time**
-- **Check-in Date & Time**
+the basic details of the guest, including: **Name, Email, Ticket Code, Shortlisting Status, Registration Date & Time, Check-in Date & Time.**
 
 ### Shortlisting Actions
 
@@ -25,6 +20,10 @@ If the event has waitlisting enabled, organizers will see two action buttons:
   - Toggle "Allow Resubmission" if the guest should be permitted to update and resubmit their submission
   - Confirm the rejection
 </Accordion>
+
+<Frame>
+  <img src="/images/event/guests/viewGuestTop.png" className="rounded-lg shadow-md" />
+</Frame>
 
 ### Available Actions
 
@@ -66,9 +65,14 @@ Guests may purchase multiple tickets, including for themselves, and pay as a sin
 - **Total Tickets Purchased**
 - **Names of Guests Who Redeemed Them**
 
-## Coupon Usage
+## Coupon & Payement Usage 
 
-If a guest used a coupon code during registration, this will also be displayed in the modal.
+If a guest used a coupon code during registration, this will also be displayed in the modal
+along with the amount paid.
+
+<Frame>
+  <img src="/images/event/guests/viewGuestMid.png" className="rounded-lg shadow-md" />
+</Frame>
 
 ## Form Information
 
@@ -94,6 +98,10 @@ If the current event is a main event with child events (sub-events):
 - A "View Data" button navigates to the guest's record in the specific sub-event
 - Clicking this button opens the guest view for that sub-event
 
+<Frame caption="this user has registered for the data-analytics-using-python sub event">
+  <img src="/images/event/guests/childEvent.png" className="rounded-lg shadow-md" />
+</Frame>
+
 ### Parent Event Submission
 
 If the current event is a sub-event:
@@ -101,3 +109,7 @@ If the current event is a sub-event:
 - The guest's submission for the parent event will be displayed
 - Basic information about their parent event registration status is shown
 - A "View Data" button navigates to the guest's record in the main event
+
+<Frame caption="view guest information in sub event showing, the user's parent event submission">
+  <img src="/images/event/guests/parentevent.png" className="rounded-lg shadow-md" />
+</Frame>
