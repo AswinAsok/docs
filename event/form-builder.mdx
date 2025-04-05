@@ -3,31 +3,36 @@ title: "Form Builder"
 description: "The Form Builder is where event organizers create and customize the registration form for their event."
 ---
 
-## Sections in Form Builder
-The form builder consists of two main sections:
-
-1. **Default Fields**
-2. **Form Fields**
-
 ## Default Fields
+<Frame>
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/formBuilder/defaultFields.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
 Some fields are essential for the functioning of the application and are linked to other features. These fields include:
 
-- Name
-- Email
-- Phone
-- Category
-- Organization
-- District
-
+<Warning>
 If you need any of the above fields in your form, use the toggle provided instead of creating a custom field with the same name.
+</Warning>
 
 ## Form Fields
+
+<Frame>
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/formBuilder/formFields.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
+
 This section lists all the fields included in the event registration form, in the order they appear.
 
 - To create a new field, click the **"Add Question"** button, which adds a new text field to the form.
 - To edit a field, simply click on it, and the field will expand to reveal its settings.
-- To delete a field, click the delete icon next to the field.
-- To duplicate a field, click the duplicate icon at the right end of the field.
+- To delete a field, click the delete icon <Icon icon="trash" iconType="solid"/> next to the field.
+- To duplicate a field, click the duplicate icon <Icon icon="copy" iconType="solid"/> at the right end of the field.
 
 ## Form Field Structure
 A form field consists of five key sections:
@@ -44,7 +49,7 @@ Each form field has additional controls to manage visibility and requirements:
 
 - **Required** - When enabled, this form field must be filled before submission is allowed.
 - **Admin Only** - When enabled, this field will only be visible to administrators and not to users filling out the form. This is useful for maintaining administrator-specific information.
-- **Hide Field** - You can hide a field from users without making it admin-only by clicking the eye button in the top right corner of the form field.
+- **Hide Field** - You can hide a field from users without making it admin-only by clicking the eye button <Icon icon="eye" iconType="solid"/>  in the top right corner of the form field.
 
 ### Form Field Settings
 Each form field can have additional settings to enforce specific rules:
@@ -62,6 +67,13 @@ Form fields can be displayed based on previous user inputs.
 **Example:** The **College** field can be configured to appear only if the user selects "Student" as their category from the dropdown.
 
 ## Option Groups
+<Frame caption="the picture shows how the college is being conditionally displayed based on the district selected using the option group.">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/formBuilder/optionGroup.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
 For **Single Select** and **Multiple Select** fields, an additional section called **Option Group** is available.
 
 - Each dropdown field must have at least one default option group without conditions.
@@ -79,26 +91,78 @@ If there are two dropdown fields:
 ## Supported Form Field Types
 We support commonly used form field types, including:
 
-- Text
-- Email
-- Phone
-- Single Select
-- Multi Select
-- Radio
-- Checkbox
-- Number
-- Date Time
-- Date
-- Time
-- Rating
-- File
-- URL
+
+<CardGroup cols={3}>
+  <Card
+    title="Text"
+    description="A simple text input field."
+  />
+  <Card
+    title="Email"
+    description="An email input field with validation."
+  />
+  <Card
+    title="Phone"
+    description="A phone number input field."
+  />
+  <Card
+    title="Single Select"
+    description="A dropdown menu for single selection."
+  />
+  <Card
+    title="Multi Select"
+    description="A dropdown menu for multiple selections."
+  />
+  <Card
+    title="Radio"
+    description="A set of radio buttons for single selection."
+  />
+  <Card
+    title="Checkbox"
+    description="A checkbox for binary options."
+  />
+  <Card
+    title="Number"
+    description="A numeric input field."
+  />
+  <Card
+    title="Date Time"
+    description="A date and time input field."
+  />
+  <Card
+    title="Date"
+    description="A date input field."
+  />
+  <Card
+    title="Time"
+    description="A time input field."
+  />
+  <Card
+    title="Rating"
+    description="A rating input field."
+  />
+  <Card
+    title="File"
+    description="A file upload input field."
+  />
+  <Card
+    title="URL"
+    description="A URL input field."
+  />
+</CardGroup>
 
 <Info>
 You can add multiple **Phone**, **Email**, and **Name** fields, but the one from the **Default Fields** section will be used as the primary identifier for guests across the platform (e.g., emails will be sent to the email entered in the default field).
 </Info>
 
 ## Closing the Form
+<Frame caption="the picture shows how the college is being conditionally displayed based on the district selected using the option group.">
+<img
+  className="rounded-lg shadow-md" 
+  src="/images/event/formBuilder/closeForm.png"
+  alt="MakeMyPass Overview"
+/>
+</Frame>
 If you need to close registration before the event itself, you can use the "Close Form" button located in the top right part of the form fields section.
 
 When clicked, this button opens a modal that allows you to:
