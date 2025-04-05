@@ -1,20 +1,17 @@
 ---
 title: "Advanced Event Settings"
-description: "The **Advanced Event Settings** page allows you to configure various options for your event, including ticketing, registration, and check-in features."
+description: "The **Advanced Settings** page allows you to configure various event settings, including ticketing options, check-in methods, and more."
 ---
 
-This page can be accessed by clicking the **Advanced Settings** button on the edit event page.
-near the upload logo button.
-
 ## Show Tickets First
-By default, on the event registration page, the event form is shown first. This setting allows changing the order so that tickets are shown first using this toggle.
+By default, on the event registration page, the event form is shown first. This setting allows changing the order so that tickets are shown first.
 
 ## Allow Team Registrations
 If the event supports team registrations, such as a hackathon, this toggle can be enabled.
 
 - **Min. Members:** Once enabled, this input appears, allowing you to set the minimum number of members required for a team.
 - **Max. Members:** Similar to Min. Members, this input allows setting the maximum number of members per team.
-- **Per User Ticket:** Individual tickets per team member.
+- **Per User Ticket:** If in a team there are 5 members, then each of them should take seperate tickets. If not enabled a single person can but the Max. Members ticket and all the members can be registered under that ticket.
 
 ## Allow Multi Ticket
 If the event allows multiple tickets to be purchased in a single transaction, this toggle can be enabled.
@@ -24,32 +21,32 @@ If the event has multiple tickets, this toggle allows grouping them together. Th
 for all the tickets.
 
 ## Enable Checkout Scan
-Similar to the check-in scan, if the organizer wishes to track check-outs as well, this toggle can be enabled.
+Similar to the check-in scan, if the organizer wishes to track check-outs as well, this toggle can be enabled. And a button will be visbile on the Scan QR page to check out the user.
 
 ## Thank You Page
 By default, a modal appears when a user registers for an event. If the organizer prefers to show a dedicated page instead, this toggle can be used.
 
 <Info>
-When using the modal, the user can close it and the registration form reloads. With this toggle enabled, the form does not reload.
+When using the modal, the user can close it and the registration form reloads. With this toggle enabled, the form does not reload as the user is redirected to a new page.
 </Info>
 
 ## Enable Randomizer
 If the organizer wants to randomly select participants from the checked-in attendees for competitions or Q&A sessions, this toggle can be enabled.
 
 ## Multi-Day Check-In
-For events spanning multiple days, this toggle allows guests to use the same ticket for subsequent days.
+For events spanning multiple days, this toggle allows guests to use the same ticket for subsequent days without needing to re-register. This is useful for events like hackathons or conferences where attendees may need to check in on different days.
 
 ## Check-In Confirmation
-When enabled, organizers can add a list of form fields as a multi-select. During check-in, these fields will be displayed for confirmation.
+When enabled, organizers can add a list of form fields using a multi-select. During check-in, these fields will be displayed for confirmation. This is useful for events where the organizer needs to verify specific details about the attendee before allowing them to enter the venue.
 
 ## Add Custom Mail Alias
-If enabled, only the organizer can set a custom email alias instead of using the default one provided by MakeMyPass.
+If enabled, intead of the default mail alias which is noreply@makemypass.com the eventName@makemypass.com will be used to send the mail to the attendess.
 
 ## Print Ticket
 If physical ticket printing is required at the event venue, this toggle must be enabled.
 
 ### Remote Printing
-We support remote printing, where scanning happens away from the printing counter. Once scanned, the ticket is queued at the print desk, so it is ready by the time the attendee reaches the counter.
+We support remote printing, where scanning happens away from the printing counter. Once scanned, the ticket is queued at the print desk based on a unique printer id, so it is ready by the time the attendee reaches the counter.
 
 ## Edit Ticket Code
 If ticket codes need to be edited after issuing, this toggle can be enabled. The "Edit Guest" form on the guest page can then be used to modify ticket codes.
@@ -62,8 +59,8 @@ Once edited, the new ticket code will be shown on the user's "View Ticket" page.
 For events involving shortlisting, organizers can allow users to correct and resubmit their applications for approval by enabling this toggle.
 
 ## Follow-up Message
-This input allows entering a message that will be shown to users either in the modal or on a new page, depending on the "Thank You Modal" setting.
+This input allows entering a message that will be shown to users either in the modal or on a new page, depending on the "Thank You Modal" setting after they have registered for the event.
 
-<Info>
+<Tip>
 Links to WhatsApp groups, additional instructions, etc., can be placed here.
-</Info>
+</Tip>
